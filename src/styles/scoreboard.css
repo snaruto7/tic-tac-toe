@@ -1,0 +1,9 @@
+.game {
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    border: 3px dotted green;
+    padding: 100px;
+
+    margin-top: 100px;
+}

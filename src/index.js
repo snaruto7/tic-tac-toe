@@ -9,6 +9,7 @@ import { Scoreboard } from './components/scoreboard'
 import './styles/board.css'
 import './styles/box.css'
 import './styles/buttons.css'
+import './styles/scoreboard.css'
 
 // Create App component
 class App extends React.Component {

@@ -21,21 +21,18 @@ export class Scoreboard extends React.Component {
 
   render() {
     return (
-      <div className="game">
-        <h1>Recent games:</h1>
+      <>
+        <div className="game" >
+          <h1>Tic Tac Toe:</h1>
 
-                {/* List with previous games */}
-        <ul>
-          {this.state.scoreboard.map((leader, key) => {
-            return <li key={key}>{leader}</li>
-          })}
-        </ul>
+                  {/* List with previous games */}
 
-                {/* Link to start new game */}
-        <Link to="/board">
-          <button className="btn">Start new game</button>
-        </Link>
-      </div>
+                  {/* Link to start new game */}
+          <Link to="/board">
+            <button className="btn">Start new game</button>
+          </Link>
+        </div>
+      </>
     )
   }
 }

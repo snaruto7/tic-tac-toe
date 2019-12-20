@@ -1,9 +1,11 @@
-/* .App {
+#app {
+  height: 40vmin;
+  margin: auto;
   text-align: center;
 }
 
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
 }
 
