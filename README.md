@@ -1,3 +1,3 @@
-!https://circleci.com/gh/snaruto7/tic-tac-toe.svg?style=shield!:https://circleci.com/gh/circleci/circleci-docs
+[![<snaruto7>](https://circleci.com/gh/snaruto7/tic-tac-toe.svg?style=svg)](https://circleci.com/gh/snaruto7/tic-tac-toe/)
 
 First initialization of project
