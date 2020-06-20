@@ -97,7 +97,7 @@ export class Board extends React.Component {
         return (
             <>
                 {/* Link to scoreboard */}
-                <Link to="/tic" className="board-link">Go back to scoreboard</Link>
+                <Link to="/" className="board-link">Go back to scoreboard</Link>
                 <section className="whole-page">
                     {/* The game board */}
                     <div className="board-wrapper">
