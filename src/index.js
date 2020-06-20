@@ -17,8 +17,8 @@ class App extends React.Component {
     return (
       <div className="app">
         <BrowserRouter>
-          <Route exact path="/" component={Scoreboard}/>
-          <Route path="/board" component={Board}/>
+          <Route exact path="/tic" component={Scoreboard}/>
+          <Route path="/tic/board" component={Board}/>
         </BrowserRouter>
       </div>
     )

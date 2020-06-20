@@ -28,7 +28,7 @@ export class Scoreboard extends React.Component {
                   {/* List with previous games */}
 
                   {/* Link to start new game */}
-          <Link to="/board">
+          <Link to="/tic/board">
             <button className="btn">Start new game</button>
           </Link>
         </div>
