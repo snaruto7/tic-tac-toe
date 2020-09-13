@@ -43,6 +43,7 @@ pipeline {
                         docker push $registry/$imageName:$version
                         docker rmi -f $registry/$imageName:$version
                     '''
+                }
             }
         }
         stage('Get Kubernetes Details'){
@@ -69,6 +70,7 @@ pipeline {
                         fi
                         kubectl --kubeconfig=${WORKSPACE}/kube-config create secret docker-registry ${registrySecret} --docker-server=$registry --docker-username=$AZURE_CLIENT_ID --docker-password=$AZURE_CLIENT_SECRET --docker-email=shivam.narula7@gmail.com
                     """
+                }
             }
         }
         stage('Deploy Application'){
