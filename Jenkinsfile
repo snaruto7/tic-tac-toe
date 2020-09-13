@@ -76,7 +76,7 @@ pipeline {
         stage('Deploy Application'){
             steps{
                 sh """
-                    sed -ie 's/#{REGISTRY_URL}#\\/#{IMAGE_NAME}#:#{BUILD_ID}#/$registry\\/$imageName:$version' kubernetes/deployment.yaml
+                    sed -ie 's/#{REGISTRY_URL}#\\/#{IMAGE_NAME}#:#{BUILD_ID}#/$registry\\/$imageName:$version/g' kubernetes/deployment.yaml
 
                     kubectl --kubeconfig=${WORKSPACE}/kube-config apply -f  kubernetes/deployment.yaml
 
