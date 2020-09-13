@@ -28,7 +28,7 @@ pipeline {
         stage('Docker build'){
             steps{
                 sh '''
-                    docker build -f ./docker/Dockerfile -t $imageName:$VER .
+                    docker build -f ./docker/Dockerfile -t $imageName:$version .
                 '''
             }
         }
