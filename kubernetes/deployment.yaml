@@ -21,6 +21,8 @@ spec:
         app: tic-tac-toe
     spec:
       containers:
-      - image: snaruto7/tic-tac-toe:v1
+      - image: #{REGISTRY_URL}#/#{IMAGE_NAME}#:#{BUILD_ID}#
         imagePullPolicy: IfNotPresent
         name: tic-tac-toe
+      imagePullSecrets:
+      - name: docker-secret
