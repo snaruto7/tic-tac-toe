@@ -80,7 +80,7 @@ pipeline {
 
                     kubectl --kubeconfig=${WORKSPACE}/kube-config apply -f  kubernetes/deployment.yaml
 
-                    kubectl --kubeconfig=${WORKSPACE}/kube-config apply -f kubenetes/service.yaml
+                    kubectl --kubeconfig=${WORKSPACE}/kube-config apply -f kubernetes/service.yaml
 
                     kubectl --kubeconfig=${WORKSPACE}/kube-config rollout restart deployment/tic-tac-toe
 
