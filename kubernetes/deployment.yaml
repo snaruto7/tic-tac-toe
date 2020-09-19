@@ -21,7 +21,7 @@ spec:
         app: tic-tac-toe
     spec:
       containers:
-      - image: #{REGISTRY_URL}#/#{IMAGE_NAME}#:#{BUILD_ID}#
+      - image: #{REGISTRY_URL}#/#{IMAGE_FOLDER}#/#{IMAGE_NAME}#:#{BUILD_ID}#
         imagePullPolicy: IfNotPresent
         name: tic-tac-toe
       imagePullSecrets:
